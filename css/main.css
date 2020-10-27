@@ -1,5 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,600,700,300,800);
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&family=Roboto:wght@500&display=swap');
 
 /*************************
 *******Typography******
@@ -7,10 +8,11 @@
 
 body {
   background: #fff;
-  font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
   color:#4e4e4e;
   line-height: 22px;
 }
+
 
 h1,
 h2,
@@ -19,7 +21,7 @@ h4,
 h5,
 h6 {
   font-weight: 600; 
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   color:#4e4e4e;
 }
 
@@ -88,6 +90,38 @@ hr {
   border-color: rgba(255, 255, 255, 0.5);
 }
 
+.header {
+	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url('../images/slider/bg11.jpg') center center no-repeat;
+  height:540px;
+  background-size: cover;
+}
+
+.header .header-content {
+	padding-top: 18rem;
+	padding-bottom: 2.125rem;
+	text-align: center;
+}
+
+.header .text-container {
+	margin-bottom: 3rem;
+}
+
+.header h1 {
+	margin-bottom: 0.5rem;
+	color: #fff;
+}
+
+.header .p-large {
+	margin-bottom: 2rem;
+	color: #dfe5ec;
+}
+
+.header .btn-solid-lg {
+	margin-right: 0.5rem;
+	margin-bottom: 1.25rem;
+}
+
+
 a:hover,
 a:focus {
   color: #111;
@@ -138,6 +172,11 @@ body > section {
   background-color: transparent !important;
   margin-bottom: 0;
 }
+
+
+
+
+
 
 @-webkit-keyframes scaleIn {
   0% {
@@ -267,7 +306,8 @@ input.search-form:hover {
   margin-bottom: 0;
   /* background: linear-gradient(to bottom right,#FF6C02 0%, #FFB400 100%); */
   background: linear-gradient(to bottom right, #181818 0%, #3D3D3D 70%);
-  padding: 15px 0;
+  /* background-color: transparent; */
+  padding: 10px 0;
   padding-bottom: 0;
 }
 
@@ -2603,7 +2643,40 @@ shortcodes page css
 
 
 
+.btn-solid-lg {
+	display: inline-block;
+	padding: 2.375rem 3.125rem 2.375rem 3.125rem;
+	border: 0.125rem solid #FEE715FF;
+	border-radius: 0.45rem;
+	background-color: #FEE715FF;
+	color: rgb(79, 80, 77);
+  font: 700 0.75rem/0 "Roboto", sans-serif;
+  font-size: larger;
+	text-decoration: none;
+	transition: all 0.2s;
+}
 
+.btn-solid-lg:hover {
+	background-color: transparent;
+	color: #FEE715FF;
+	text-decoration: none;
 
+}
 
+a.back-to-top {
+	position: fixed;
+	z-index: 999;
+	right: 0.75rem;
+	bottom: 0.75rem;
+	display: none;
+	width: 4.625rem;
+	height: 4.625rem;
+	border-radius: 2.875rem;
+	background: #FEE715FF url("../images/up-arrow.png") no-repeat center 47%;
+	background-size: 2.125rem 2.125rem;
+	text-indent: -9999px;
+}
 
+a:hover.back-to-top {
+	background-color: #FEE715FF; 
+}
